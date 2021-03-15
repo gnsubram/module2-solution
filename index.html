@@ -1,218 +1,26 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Order Menu</title>
-
-    <style>
-        /********** Base styles **********/
-
-        * {
-
-            box-sizing: border-box;
-
-        }
-
-        h1 {
-
-            margin-bottom: 15px;
-
-        }
-
-
-
-        p {
-
-            border: 1px solid black;
-
-            background-color: #A52A2A;
-
-            width: 90%;
-
-            height: 150px;
-
-            margin-right: auto;
-
-            margin-left: auto;
-
-            font-family: Helvetica;
-
-            color: white;
-
-        }
-
-
-
-        /* Simple Responsive Framework. */
-
-        .row {
-
-            width: 100%;
-
-        }
-
-
-
-        /********** Desktop devices only **********/
-
-        @media (min-width: 992px) {
-
-            .col-lg-1,
-            .col-lg-2,
-            .col-lg-3 {
-
-                float: left;
-
-                /* border: 4px solid green; */
-
-            }
-
-            .col-lg-1 {
-
-                width: 33.33%;
-
-            }
-
-            .col-lg-2 {
-
-                width: 33.33%;
-
-            }
-
-            .col-lg-3 {
-
-                width: 33.33%;
-
-            }
-
-        }
-
-    
-
-
-
-        /********** tablet devices only **********/
-
-        @media (min-width: 768px) and (max-width: 991px) {
-            .col-md-6{
-                width: 50%;
-                margin: auto;
-                float: left;
-                
-            }
-
-
-            .tablet{
-                width: 100% !important;
-            }
-
-            /* .col-md-1,
-            .col-md-2,
-            .col-md-3 {
-
-                float: left;
-
-                border: 4px solid green;
-
-            }
-
-            .col-md-1 {
-
-                width: 33.33%;
-
-            }
-
-            .col-md-2 {
-
-                width: 33.33%;
-
-            }
-
-            .col-md-3 {
-
-                width: 33.33%;
-
-            } */
-
-
-
-        }
-
-
-
-        /********** Mobile only devices only **********/
-
-        @media (max-width: 767px) {
-            .col-md-6{
-                width: 100%;
-            }
-
-            /* .col-md-1,
-            .col-md-2,
-            .col-md-3 {
-
-                float: left;
-
-                border: 4px solid green;
-
-            }
-
-            .col-md-1 {
-
-                width: 33.33%;
-
-            }
-
-            .col-md-2 {
-
-                width: 33.33%;
-
-            }
-
-            .col-md-3 {
-
-                width: 33.33%;
-
-            } */
-
-
-
-
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styling.css">
 </head>
-
 <body>
-
-    <h1 align=Center> Order Menu </h1>
-
-
-
+    <h1 align="center"> Order Menu </h1>
     <div class="row">
-
         <div class="col-lg-3 col-md-6">
-            <p align=Right> Chicken <br>This one to show chicken Description</p>
+            <span class="first" align="right"> Chicken</span><br><br>   
+                <p align="right">This one to show chicken Description</p>
         </div>
-
-        <div class="col-lg-3 col-md-6">
-            <p align=Right>Mutton <br> This one to show Mutton Description</p>
+        <div class="col-lg-3 col-md-6">       
+            <span class="second">Mutton</span>
+            <p align=Right> <br><br> This one to show Mutton Description</p>
         </div>
-
         <div class="col-lg-3 col-md-6 tablet">
-            <p align=Right>Pork <br> This one to show Fork Description</p>
+            <span class="third">Pork</span>
+            <p align=Right> <br><br> This one to show Fork Description</p>
         </div>
-
     </div>
-
-
-
 </body>
-
 </html>
